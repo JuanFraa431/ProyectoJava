@@ -71,6 +71,7 @@ public class LoginServlet extends HttpServlet {
             pre.invalidate();
             HttpSession session = request.getSession(true);
             session.setMaxInactiveInterval(30 * 60); // 30 min
+            session.setAttribute("usuario", u); // Objeto completo
             session.setAttribute("userId", u.getId());
             session.setAttribute("nombre", u.getNombre());
             session.setAttribute("email", u.getEmail());

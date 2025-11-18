@@ -13,18 +13,15 @@ public class PartidaDAO {
         p.setUsuarioId(rs.getInt("usuario_id"));
         p.setHistoriaId(rs.getInt("historia_id"));
         
-        Timestamp inicio = rs.getTimestamp("fecha_inicio");
-        if (inicio != null) p.setFechaInicio(inicio.toString());
-        
-        Timestamp fin = rs.getTimestamp("fecha_fin");
-        if (fin != null) p.setFechaFin(fin.toString());
+        p.setFechaInicio(rs.getTimestamp("fecha_inicio"));
+        p.setFechaFin(rs.getTimestamp("fecha_fin"));
         
         p.setEstado(rs.getString("estado"));
         p.setPistasEncontradas(rs.getInt("pistas_encontradas"));
         p.setUbicacionesExploradas(rs.getInt("ubicaciones_exploradas"));
         p.setPuntuacion(rs.getInt("puntuacion"));
         p.setSolucionPropuesta(rs.getString("solucion_propuesta"));
-        p.setCasoResuelto(rs.getBoolean("caso_resuelto"));
+        p.setCasoResuelto(rs.getInt("caso_resuelto"));
         p.setIntentosRestantes(rs.getInt("intentos_restantes"));
         return p;
     }

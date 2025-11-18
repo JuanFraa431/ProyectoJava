@@ -58,16 +58,16 @@
 		  <span class="badge"><i class="fa-solid fa-shield-halved"></i> Seguridad</span>
 		</a>
 
-        <a class="card" href="${pageContext.request.contextPath}/admin/usuarios">
-		  <div class="icon"><i class="fa-solid fa-user-gear"></i></div>
+        <a class="card" href="${pageContext.request.contextPath}/admin/personajes">
+		  <div class="icon"><i class="fa-solid fa-user-secret"></i></div>
 		  <h3>Personajes</h3>
-		  <p>Alta, baja y modificación de personajes jugables.</p>
+		  <p>Alta, baja y modificación de personajes de las historias.</p>
 		  <i class="fa-solid fa-chevron-right arrow"></i>
-		  <span class="badge"><i class="fa-solid fa-shield-halved"></i> Seguridad</span>
+		  <span class="badge"><i class="fa-solid fa-users"></i> ABM</span>
 		</a>
 
 
-        <a class="card" href="#">
+        <a class="card" href="${pageContext.request.contextPath}/admin/ubicaciones">
           <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
           <h3>Ubicaciones</h3>
           <p>Habitaciones y zonas de la mansión. Disponibilidad y accesos.</p>
@@ -83,7 +83,7 @@
           <span class="badge"><i class="fa-solid fa-feather"></i> ABM</span>
         </a>
 
-        <a class="card" href="#">
+        <a class="card" href="${pageContext.request.contextPath}/admin/pistas">
           <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
           <h3>Pistas</h3>
           <p>Relacioná pistas con Personajes y Ubicaciones.</p>
@@ -91,12 +91,12 @@
           <span class="badge"><i class="fa-solid fa-link"></i> Relacional</span>
         </a>
 
-        <a class="card" href="#">
+        <a class="card" href="${pageContext.request.contextPath}/admin/partidas">
           <div class="icon"><i class="fa-solid fa-chess-knight"></i></div>
           <h3>Partidas</h3>
           <p>Estados de juego, reinicios y avances por jugador.</p>
           <i class="fa-solid fa-chevron-right arrow"></i>
-          <span class="badge"><i class="fa-solid fa-list-check"></i> Gestión</span>
+          <span class="badge"><i class="fa-solid fa-list-check"></i> Monitoreo</span>
         </a>
       </div>
     </section>
